@@ -2,8 +2,12 @@ from random_quote import RandomQuote
 from tiktok_tts import TikTokTTS
 from pexels_api_video import PexelsApi
 from video_editor import Generator
+import configparser
 
-NUM_OF_VIDEOS = 10
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+NUM_OF_VIDEOS = config["DEFAULT"]["NumOfVideos"]
 
 for i in range(NUM_OF_VIDEOS):
     random_quote = RandomQuote()

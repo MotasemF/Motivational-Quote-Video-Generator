@@ -2,8 +2,12 @@ import requests
 import json
 import random
 import os
+import configparser
 
-PEXELS_API_KEY = ''
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+PEXELS_API_KEY = config["DEFAULT"]["PexelsApiKey"]
 URL = "https://api.pexels.com/videos/search?query=Man doing Exercise&per_page=100&size=small&orientation=portrait"
 RESPONSE_PATH = "pexelsApiResponse.json"
 
