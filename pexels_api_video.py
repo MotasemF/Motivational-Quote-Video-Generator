@@ -3,7 +3,7 @@ import json
 import random
 import os
 
-PEXELS_API_KEY = 'Sa5yTmvSOlRbxsMFE3xB4YCAbM2Zk3Uauo0bfRCbi6u9w26hxKqSLbVz'
+PEXELS_API_KEY = ''
 URL = "https://api.pexels.com/videos/search?query=Man doing Exercise&per_page=100&size=small&orientation=portrait"
 RESPONSE_PATH = "pexelsApiResponse.json"
 
