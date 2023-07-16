@@ -3,7 +3,6 @@ from moviepy.video.tools.drawing import *
 from moviepy.video.fx.all import crop
 from PIL import ImageFont
 from moviepy.video.fx.all import resize
-from gtts import gTTS
 from tiktok_tts import TikTokTTS
 
 VIDEO_WIDTH = 1080
